@@ -1,0 +1,39 @@
+[
+  {
+    "type": "tab",
+    "label": "General",
+    "sections": [
+      {
+        "label": "Settings",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Related brands"
+          },
+          {
+            "type": "text",
+            "id": "maxBrands",
+            "label": "Max brands to show",
+            "default": "12"
+          },
+          {
+            "type": "text",
+            "id": "dataUrl",
+            "label": "Data source URL",
+            "default": "/content/related-brands.json",
+            "helper_text": "Path to the JSON produced by your generator"
+          },
+          {
+            "type": "text",
+            "id": "brandIdOverride",
+            "label": "Brand ID (optional)",
+            "default": "",
+            "helper_text": "Set this to force the brand ID when clean URLs are used"
+          }
+        ]
+      }
+    ]
+  }
+]

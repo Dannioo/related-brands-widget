@@ -1,0 +1,17 @@
+{
+  "name": "related-brands-widget",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "gen": "node scripts/bc-generate-related-brands-json.js",
+    "deploy:template": "node deploy/deploy-template.js",
+    "preview": "npx serve examples -p 5050",
+    "lint": "echo \"(add your linter here)\""
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {}
+}

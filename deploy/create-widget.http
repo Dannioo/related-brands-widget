@@ -1,0 +1,23 @@
+### Create a widget instance (assign to a region on brand page)
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/content/widgets
+X-Auth-Token: {{ACCESS_TOKEN}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "widget_template_uuid": "{{TEMPLATE_UUID}}",
+  "name": "Related Brands – Default",
+  "widget_configuration": {
+    "heading": "Related brands",
+    "maxBrands": 12,
+    "dataUrl": "/content/related-brands.json"
+  },
+  "placements": [
+    {
+      "entity_id": 0,
+      "entity_type": "brand",
+      "template_file": "pages/brand",
+      "region": "brand_below_header"
+    }
+  ]
+}

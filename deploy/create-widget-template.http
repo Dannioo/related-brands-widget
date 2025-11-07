@@ -1,0 +1,12 @@
+### Create widget template
+POST https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/content/widget-templates
+X-Auth-Token: {{ACCESS_TOKEN}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Related Brands (Auto)",
+  "schema": {{schema}},
+  "template": "{{template}}",
+  "widget_configuration": {}
+}
